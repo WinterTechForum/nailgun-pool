@@ -1,0 +1,10 @@
+buildscript {
+    ext.kotlin_version = '1.2.21'
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id "org.jetbrains.kotlin.jvm" version "1.2.21"
+}
