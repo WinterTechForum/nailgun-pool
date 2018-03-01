@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator"/>
+
+  <appender name="file" class="ch.qos.logback.core.FileAppender">
+    <file>nailgunpool.log</file>
+    <immediateFlush>true</immediateFlush>
+    <encoder>
+      <pattern>%logger{0}- %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="com.wintertechforum.nailgunpool" level="info"/>
+  <!--<logger name="com.martiansoftware.nailgun.NGInputStream" level="error"/>-->
+
+  <root level="warn">
+    <appender-ref ref="file"/>
+  </root>
+</configuration>

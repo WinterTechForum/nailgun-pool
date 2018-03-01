@@ -1,0 +1,3 @@
+export PATH="bin:$PATH"
+export NAILGUN_SERVER=127.0.1.1
+export NAILGUN_PORT=2113
